@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <h1> Do you love me </h1>
+    <button onclick="yes()" ;>Yes</button>
+    <button onclick="no()" onmouseover="no()"  style=" position:absolute " id="btn"> No</button>
+        <script>
+            function yes() {
+                alert('Yes. you are right');
+            }
+
+            function no() {
+                var width = window.innerWidth;
+                var height = window.innerHeight;
+                var w = Math.round(Math.random() * width);
+                var h = Math.round(Math.random() * height);
+                document.getElementById('btn').style.left = w +'px';
+                document.getElementById('btn').style.top = h +'px';
+            }
+        </script>
+</body>
+</html>
